@@ -5,6 +5,20 @@
     More info at: http://lesselements.com
   ---------------------------------------------------*/
 
+.placeholder(@color) {
+  &::-webkit-input-placeholder {
+       color: @color;
+    }
+    &:-moz-placeholder {
+       color: @color;  
+    }
+    &::-moz-placeholder {
+       color: @color;  
+    }
+    &:-ms-input-placeholder {  
+       color: @color;  
+    }
+}
 .gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
   background: @color;
   background: -webkit-gradient(linear,
