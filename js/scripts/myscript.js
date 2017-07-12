@@ -57,6 +57,25 @@ var eggScript = function(){
 		$('.select select').selectric();
 	});
 
+	$(window).load(function(){  
+		$('.owl-carousel').owlCarousel({
+		    loop:true,
+		    margin:10,
+		    nav:false,
+		    responsive:{
+		        0:{
+		            items:2
+		        },
+		        768:{
+		            items:4
+		        },
+		        1350:{
+		            items:6
+		        }
+		    }
+		});
+	});
+
 	$(window).scroll(function(){
 		backToTopScroll();
 	});
